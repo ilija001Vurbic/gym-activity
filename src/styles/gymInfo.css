@@ -1,0 +1,23 @@
+.gym-container {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 30px;
+}
+
+.gym {
+    display: flex;
+}
+
+.gym-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.gym-data {
+    margin: 6% auto;
+}

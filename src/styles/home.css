@@ -1,0 +1,28 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+}
+
+.moto-container {
+    width: 35%;
+    height: 30%;
+    margin: auto 2%;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 2;
+    padding-top: 2%;
+}
+
+.moto-paragraph {
+    font-weight: 400;
+}
+
+.newUser-container {
+    display: flex;
+    justify-content: center;
+}
+
+.register-link {
+    text-decoration: none;
+    color: #000000;
+}

@@ -1,0 +1,84 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+}
+
+.register-box {
+    border: 1px solid #DDDDDD;
+    background-color: #FFFFFF;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.title {
+    margin-top: 16%;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.select-form {
+    margin-bottom: 5%;
+}
+
+#password,
+#username,
+#email,
+#first-name,
+#last-name {
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    background-color: #F2F2F2;
+    font-size: 1em;
+}
+
+#password:focus,
+#username:focus,
+#email:focus,
+#first-name:focus,
+#last-name:focus {
+    outline: none !important;
+    border: 1px solid #000000;
+}
+
+.submit-button {
+    width: 200px;
+    height: 30px;
+    margin: 10% auto;
+    font-size: 14px;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    color: #403f3f;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+#register {
+    margin-left: 5%;
+    padding: 1%;
+    width: 45%;
+    border-radius: 3px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+}
+
+.successful-register {
+    color: #000000;
+    font-weight: 600;
+    margin-top: 5%;
+}
