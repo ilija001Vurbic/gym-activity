@@ -38,6 +38,7 @@
     border: 1px solid #CCCCCC;
     background-color: #F2F2F2;
     font-size: 1em;
+    margin: 5px;
 }
 
 #password:focus,

@@ -1,6 +1,9 @@
+
 .workout-container {
-    display: flex;
-    justify-content: right;
+    display: grid;
+    float: right;
+    margin-right: 10%;
+    margin-top: -30%;
 }
 
 .workout-box {
@@ -21,10 +24,11 @@
 .workout-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 3%;
 }
 
-#workout,
+#activity,
 #duration {
     width: 250px;
     height: 30px;
@@ -32,10 +36,11 @@
     border: 1px solid #CCCCCC;
     background-color: #F2F2F2;
     margin-top: 5%;
+    margin-left: 10%;
 }
 
 #duration:focus,
-#workout:focus {
+#activity:focus {
     outline: none !important;
     border: 1px solid #000000;
 }
@@ -49,4 +54,75 @@
 .submit-button:hover {
     cursor: pointer;
     color: #403f3f;
+}
+.calendar-container {
+    display: grid;
+    float: left;
+    margin-left: 10%;
+}
+.calendar-box {
+    width: 50%;
+    border: 1px solid #DDDDDD;
+    background-color: #FFFFFF;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+    margin-top: 3%;
+    text-align: center;
+}
+.calendar{
+    width: 100%;
+}
+
+.activity-title {
+    margin-left: 18%;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+.activity-container {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    width: 60%;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 2%;
+    text-align: justify;
+    margin-bottom: 2%;
+    transform: scale(1.0);
+    transition: all 0.3s ease-in-out;
+}
+
+.activity-container:hover {
+    transform: scale(1.07);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.activity-flex {
+    display: flex;
+}
+
+.activity-naming {
+    width: 100%;
+    margin-top: 2.5px;
+}
+
+.activity-duration{
+    margin-left: 4%;
+    font-weight: 300;
+}
+
+.activity-title {
+    margin-left: 4%;
+    font-weight: 600;
+}
+.user-edit-button{
+    margin-right: 2%;
+}
+.title-act{
+    margin-top: 35%;
+    margin-left: 10%;
 }

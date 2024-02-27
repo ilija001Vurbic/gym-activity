@@ -1,0 +1,71 @@
+.success-container {
+    text-align: center;
+}
+
+.success {
+    color: #000000;
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+.success-button {
+    width: 170px;
+    height: 30px;
+    border: 1px solid #DDDDDD;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.success-button:hover {
+    background-color: #CCCCCC;
+    border: 1px solid #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.update-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+.update-box {
+    border: 1px solid #DDDDDD;
+    background-color: #FFFFFF;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 70px;
+    border-radius: 8px;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.title {
+    margin-top: 16%;
+}
+
+.update-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#activity,
+#duration {
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    background-color: #F2F2F2;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#duration:focus,
+#activity:focus {
+    outline: none !important;
+    border: 1px solid #000000;
+}

@@ -1,20 +1,11 @@
 import React from "react";
 import "./styles/navbar.css";
 import { Link, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLocation } from "react";
 
 function Navbar() {
   const navigate = useNavigate();
-  const [isLogedIn, setIsLogedIn] = useState(true);
-
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    const isLogedIn = localStorage.getItem("IsLogedIn");
-    if (token != null && isLogedIn != false) {
-      setIsLogedIn(false);
-    }
-  });
-
+  const isLoggedIn = localStorage.getItem("IsLoggedIn");
   const roleID = localStorage.getItem("roleID");
   const [roleId, setRoleId] = useState(2);
 
@@ -24,6 +15,7 @@ function Navbar() {
 
   const clearLocalStorage = () => {
     localStorage.clear();
+    isLoggedIn=null;
     navigate("/login")
     window.location.reload();
   };
@@ -43,7 +35,7 @@ function Navbar() {
             <li>About gym</li>
           </Link>
           <li>|</li>
-          {isLogedIn ? (
+          {isLoggedIn==null ? (
             <Link className="link" to="/login">
               <li>Login</li>
             </Link>
